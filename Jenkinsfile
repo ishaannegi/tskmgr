@@ -71,7 +71,7 @@ pipeline {
             steps {
                 echo "Packaging Spring Boot application..."
 
-                bat 'mvn package'
+                bat 'mvn package -DskipTests'
             }
         }
 
